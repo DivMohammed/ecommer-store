@@ -9,6 +9,7 @@ export interface Category {
     id: string;
     name: string;
     billboard: Billboard;
+    sortCategoryId: number;
 }
 
 export interface SortCategory {

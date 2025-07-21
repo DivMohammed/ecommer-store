@@ -9,20 +9,20 @@ import useCart from "@/hooks/use-cart"
 
 
 const NavbarActions = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  // const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, [])
+  // useEffect(() => {
+  //   setIsMounted(true);
+  // }, [])
 
   const router = useRouter()
   const cart = useCart();
 
-  if (!isMounted){
-    return null;
-  }
+  // if (!isMounted){
+  //   return <div>loooding</div>;
+  // }
   return (
-    <div className="ml-auto flex items-center gap-x-4">
+    <div className=" flex items-center gap-x-4">
         <Button onClick={() => router.push("/cart")} className="flex items-center rounded-full bg-black px-4 py-2">
           <ShoppingBag
           size={20}
